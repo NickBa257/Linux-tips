@@ -1,0 +1,21 @@
+1 Installation
+
+sudo apt install openjdk-16-jdk
+
+
+2.configuration environnement
+
+nano ~/.bashrc
+
+
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64   # Chemin pour JDK 21
+export PATH=$JAVA_HOME/bin:$PATH
+
+# Pour JDK 8
+# export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64   # Chemin pour JDK 8
+# export PATH=$JAVA_HOME/bin:$PATH
+
+
+3.Appliquer les modif
+
+source ~/.bashrc

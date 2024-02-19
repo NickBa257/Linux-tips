@@ -1,0 +1,17 @@
+-----------------Demarrage appli--------------------------
+
+Si MySQL Workbench est déjà installé sur votre système et que vous le trouvez dans le menu des applications, vous pouvez suivre ces étapes pour déterminer l'emplacement de l'exécutable :
+
+    Recherche dans le menu des applications :
+        Tout d'abord, ouvrez le menu des applications de votre environnement de bureau.
+        Recherchez MySQL Workbench dans la liste des applications. Si vous le trouvez, cela signifie que l'application est installée sur votre système.
+
+    Informations sur l'application :
+        Une fois que vous avez trouvé MySQL Workbench dans le menu des applications, vous pouvez généralement faire un clic droit sur l'icône pour obtenir des options supplémentaires.
+        Recherchez une option telle que "Informations" ou "Propriétés". Cela devrait vous donner des détails sur l'emplacement de l'exécutable.
+
+    Vérification du chemin de l'exécutable :
+        Dans les informations de l'application, recherchez l'emplacement de l'exécutable. Il peut s'agir d'un chemin absolu vers le fichier exécutable, par exemple /usr/bin/mysql-workbench ou /opt/mysql-workbench/mysql-workbench.
+        Notez le chemin de l'exécutable.
+
+Une fois que vous avez trouvé l'emplacement de l'exécutable MySQL Workbench, vous pouvez utiliser ce chemin pour configurer le démarrage automatique comme expliqué dans les étapes précédentes. Si vous avez des difficultés à trouver l'exécutable ou si les options ne sont pas disponibles dans le menu des applications, veuillez me le faire savoir et je pourrai vous guider à travers d'autres méthodes pour localiser l'exécutable.

@@ -1,0 +1,31 @@
+1. Installation de paquets via APT (pour les fichiers .deb et les dépôts Ubuntu)
+
+-Paquets logiciels (.deb) : Les fichiers .deb sont des paquets installables utilisés par Debian et ses dérivés comme Ubuntu.
+   sudo dpkg -i nom_du_paquet.deb    # Installe un fichier .deb spécifique
+   sudo apt install -f               # Répare les dépendances cassées après l'installation d'un paquet .deb
+
+-À partir des dépôts officiels Ubuntu : La plupart des logiciels sont disponibles dans les dépôts d'Ubuntu et peuvent être installés avec apt.
+   sudo apt update                   # Met à jour la liste des paquets disponibles
+   sudo apt install nom_du_paquet   # Installe un paquet à partir des dépôts
+
+2. Installation de logiciels via Snap (pour les paquets snap)
+
+Les paquets snap sont des applications logicielles empaquetées avec toutes leurs dépendances pour garantir la compatibilité sur de multiples distributions Linux.
+
+sudo snap install nom_du_paquet
+
+3. Compilation de code source
+
+Pour installer des logiciels à partir du code source (généralement des fichiers .tar.gz ou .tar.bz2) :
+
+    -Extraction du code source :
+
+tar -xvzf nom_du_fichier.tar.gz    # Pour un fichier .tar.gz
+tar -xvjf nom_du_fichier.tar.bz2   # Pour un fichier .tar.bz2
+
+    -Compilation et installation :
+
+cd nom_du_dossier_extrait
+./configure
+make
+sudo make install

@@ -1,0 +1,24 @@
+Trouver et tuer le processus (méthode simple)
+🔍 Trouver le PID qui utilise le port (par ex. 8080)
+
+sudo lsof -i :8080
+
+Tu verras une ligne comme :
+
+java     12345   nickba   123u  IPv6  ...  TCP *:http-alt (LISTEN)
+
+    Ici 12345 est le PID à tuer.
+
+🛑 Tuer le processus
+
+kill -9 12345
+
+🛠️ Variante : une seule commande pour tuer tout ce qui utilise 8080
+
+sudo kill -9 $(sudo lsof -t -i :8080)
+
+✅ Vérifier que le port est libéré
+
+sudo lsof -i :8080
+
+Si rien ne s'affiche → c’est bon, le port est libre 🎉
